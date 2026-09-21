@@ -2,39 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>NIMSARA_SADARU | Nima | NIMA | LOKU NIMA | DNS</title>
-
-  <meta name="description"
-    content="NIMSARA_SADARU - Nima, NIMA, LOKU NIMA and DNS. Official contact page with WhatsApp contact information.">
-
-  <meta name="keywords"
-    content="NIMSARA_SADARU, Nimsara Sadaru, Nima, NIMA, nima, LOKU NIMA, Loku Nima, loku nima, DNS, dns, WhatsApp, NIMSARA">
-
+  <meta name="description" content="NIMSARA_SADARU - Nima, NIMA, LOKU NIMA and DNS. Official contact page with WhatsApp contact information.">
+  <meta name="keywords" content="NIMSARA_SADARU, Nimsara Sadaru, Nima, NIMA, nima, LOKU NIMA, Loku Nima, loku nima, DNS, dns, WhatsApp, NIMSARA">
   <meta name="author" content="NIMSARA_SADARU">
-
   <meta name="robots" content="index, follow, max-image-preview:large">
 
-  <!-- Replace YOUR-VERCEL-DOMAIN with your real Vercel domain -->
-  <link rel="canonical"
-    href="https://YOUR-VERCEL-DOMAIN.vercel.app/">
+  <!-- ඔබේ Vercel ලින්ක් එක මෙතනට දාන්න -->
+  <link rel="canonical" href="https://nima-contact.vercel.app/">
 
   <!-- Google / Social preview -->
   <meta property="og:type" content="profile">
-  <meta property="og:title"
-    content="NIMSARA_SADARU | Nima | LOKU NIMA | DNS">
-  <meta property="og:description"
-    content="Official contact page for NIMSARA_SADARU. Contact via WhatsApp.">
-  <meta property="og:url"
-    content="https://YOUR-VERCEL-DOMAIN.vercel.app/">
+  <meta property="og:title" content="NIMSARA_SADARU | Nima | LOKU NIMA | DNS">
+  <meta property="og:description" content="Official contact page for NIMSARA_SADARU. Contact via WhatsApp.">
+  <meta property="og:url" content="https://nima-contact.vercel.app/">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title"
-    content="NIMSARA_SADARU | NIMA | LOKU NIMA">
-  <meta name="twitter:description"
-    content="Contact NIMSARA_SADARU on WhatsApp.">
+  <meta name="twitter:title" content="NIMSARA_SADARU | NIMA | LOKU NIMA">
+  <meta name="twitter:description" content="Contact NIMSARA_SADARU on WhatsApp.">
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -42,18 +28,9 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "NIMSARA_SADARU",
-    "alternateName": [
-      "Nimsara Sadaru",
-      "Nima",
-      "NIMA",
-      "LOKU NIMA",
-      "Loku Nima",
-      "DNS"
-    ],
-    "url": "https://YOUR-VERCEL-DOMAIN.vercel.app/",
-    "sameAs": [
-      "https://wa.me/NIMSARA_SADARU"
-    ]
+    "alternateName": ["Nimsara Sadaru", "Nima", "NIMA", "LOKU NIMA", "Loku Nima", "DNS"],
+    "url": "https://nima-contact.vercel.app/",
+    "sameAs": ["https://wa.me/NIMSARA_SADARU"]
   }
   </script>
 
@@ -73,13 +50,13 @@
       justify-content: center;
       padding: 20px;
 
-      background:
-        radial-gradient(
-          circle at top,
-          #164d35 0%,
-          #07150e 48%,
-          #020604 100%
-        );
+      /* ෆොටෝ එකට ගැලපෙන තද නිල් සහ Cyan ග්‍රේඩියන්ට් එක */
+      background: radial-gradient(
+        circle at top,
+        #0a2e5c 0%,
+        #051024 50%,
+        #01040a 100%
+      );
     }
 
     .card {
@@ -88,36 +65,35 @@
       padding: 40px 25px;
       text-align: center;
 
-      background: rgba(0, 0, 0, 0.68);
-      border: 1px solid rgba(37, 211, 102, 0.35);
+      background: rgba(0, 0, 0, 0.75);
+      border: 1px solid rgba(0, 210, 255, 0.3);
       border-radius: 26px;
 
-      box-shadow:
-        0 0 35px rgba(37, 211, 102, 0.18);
+      /* නිල් පාට Glow එක */
+      box-shadow: 
+        0 0 35px rgba(0, 210, 255, 0.15),
+        inset 0 0 20px rgba(0, 210, 255, 0.05);
 
       backdrop-filter: blur(12px);
     }
 
-    .avatar {
-      width: 110px;
-      height: 110px;
-
+    /* ෆොටෝ එක ලස්සනට රවුම් කරන කොටස */
+    .avatar-container {
+      width: 130px;
+      height: 130px;
       margin: 0 auto 20px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
       border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+      box-shadow: 0 0 35px rgba(0, 210, 255, 0.6);
+    }
 
-      background: #25D366;
-      color: #06130d;
-
-      font-size: 43px;
-      font-weight: 900;
-
-      box-shadow:
-        0 0 35px rgba(37, 211, 102, 0.55);
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #01040a;
     }
 
     h1 {
@@ -127,13 +103,15 @@
     }
 
     .username {
-      color: #25D366;
+      color: #00d2ff; /* Cyan පාට */
       font-size: 17px;
       margin-bottom: 18px;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
     }
 
     .description {
-      color: #d5d5d5;
+      color: #cbd5e1;
       font-size: 15px;
       line-height: 1.7;
       margin-bottom: 28px;
@@ -142,43 +120,35 @@
     .whatsapp-btn {
       display: block;
       width: 100%;
-
       padding: 17px;
-
       border-radius: 15px;
-
-      background: #25D366;
-      color: #06130d;
-
+      
+      /* නිල් පාට බටන් එක */
+      background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+      color: white;
+      
       text-decoration: none;
-
       font-size: 17px;
       font-weight: bold;
-
-      transition: 0.25s ease;
-
-      box-shadow:
-        0 8px 25px rgba(37, 211, 102, 0.25);
+      transition: 0.3s ease;
+      box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
     }
 
     .whatsapp-btn:hover {
       transform: translateY(-3px);
-
-      box-shadow:
-        0 12px 32px rgba(37, 211, 102, 0.45);
+      box-shadow: 0 12px 32px rgba(0, 210, 255, 0.6);
     }
 
     .names {
       margin-top: 28px;
-
-      color: #999;
+      color: #64748b;
       font-size: 13px;
       line-height: 1.8;
     }
 
     footer {
       margin-top: 30px;
-      color: #666;
+      color: #475569;
       font-size: 12px;
     }
   </style>
@@ -188,8 +158,9 @@
 
   <main class="card">
 
-    <div class="avatar">
-      N
+    <!-- ෆොටෝ එක මෙතනට දාලා තියෙනවා -->
+    <div class="avatar-container">
+      <img class="avatar-img" src="https://i.postimg.cc/Vvnz4L38/nima-contact.jpg" alt="NIMSARA_SADARU">
     </div>
 
     <h1>NIMSARA_SADARU</h1>
@@ -204,25 +175,19 @@
       Contact directly through WhatsApp.
     </p>
 
-    <a
-      class="whatsapp-btn"
-      href="https://wa.me/NIMSARA_SADARU"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Contact NIMSARA_SADARU on WhatsApp"
-    >
+    <a class="whatsapp-btn" href="https://wa.me/NIMSARA_SADARU" target="_blank" rel="noopener noreferrer" aria-label="Contact NIMSARA_SADARU on WhatsApp">
       💬 Message on WhatsApp
     </a>
 
     <div class="names">
-      Nima • NIMA • LOKU NIMA • Loku Nima • DNS
+      NIMAH • LOKU NIMAH • DNS KING
     </div>
 
     <footer>
-      © 2026 NIMSARA_SADARU
+      © ᴄᴏɴᴛᴀᴛ-ᴏᴡɴᴇʀ-ɴɪᴍᴀ-ᴡᴇʙ-2026
     </footer>
 
   </main>
 
 </body>
-    </html>
+</html>
